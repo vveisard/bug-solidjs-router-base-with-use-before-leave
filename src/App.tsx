@@ -1,35 +1,15 @@
 import type { Component, ParentComponent } from "solid-js";
 import { Router, Route, useNavigate } from "@solidjs/router";
+import { FooRoute } from "./routes/FooRoute";
+import { RootRoute } from "./routes/RootRoute";
 
 const RootLayout : ParentComponent = (props) => {
   return (
     <>
-    Root
     {props.children}
     </>
   )
 }
-
-const FooRoute: Component = () => {
-  const navigate = useNavigate();
-
-  return (
-    <div>
-      Foo
-      <button onClick={() => navigate("/")}>to /</button>
-    </div>
-  );
-};
-
-const RootRoute = () => {
-  const navigate = useNavigate();
-  
-  return (
-    <div>
-      Root
-      <button onClick={() => navigate("/foo")}>to /foo</button>
-    </div>
-  );};
 
 const App: Component = () => {
   return (
