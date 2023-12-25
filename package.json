@@ -1,8 +1,8 @@
 {
-  "name": "bug-solid-router-use-before-leave",
+  "name": "bug-solidjs-router-use-before-leave",
   "type": "module",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite --base=/base"
   },
   "license": "MIT",
   "devDependencies": {
